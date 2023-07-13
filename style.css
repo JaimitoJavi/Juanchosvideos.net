@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+:root {
+    --azulturquesa: #549F93;
+    --naranja: #FF9B42;
+    --negro: #000000;
+    --h1size: 64px;
+    --h3size: 20px;
+}
+body{
+    font-family: "Lora";
+}
+h1{
+    color: var(--azulturquesa);
+    font-size: var(--h1size);
+/}
+
+*{
+    border: 1px solid red;
+    
+}
+ul{
+    display:flex;
+    justify-content: center;
+    gap: 25px; 
+}
+header{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 600px;
+}
+li{
+    list-style: none;
+}
+
+a{
+    font-size: var(--h3size);
+    color: var(--negro);
+    text-decoration: none;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Home div {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    width: 100%;
+}
+
+#Home h1 {
+    position: absolute;
+    top: 200px;
+    left: 540px;
+    size: 25100px;
+
+}  
+#size{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#size h3 {
+    font-size: 40px;
+    color:var(--azulturquesa)
+}
+
+#my-likes-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+#casademont {
+    display: flex;
+    align-items: center;
+}
+
+#three-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.my-likes-card {
+    background-color: var(--naranja);
+    display: flex;
+    height: 162px;
+}
+
+.my-likes-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-likes-card img {
+    
+}
