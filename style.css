@@ -6,19 +6,19 @@
     --negro: #000000;
     --h1size: 64px;
     --h3size: 20px;
+    --verde: #4C956C;
+    --azuloscuro: #03254E;
 }
 body{
     font-family: "Lora";
+    background-color: var(--verde);
 }
 h1{
-    color: var(--azulturquesa);
+    color: var(--azuloscuro);
     font-size: var(--h1size);
 /}
 
-*{
-    border: 1px solid red;
-    
-}
+
 ul{
     display:flex;
     justify-content: center;
@@ -70,7 +70,7 @@ a{
 
 #size h3 {
     font-size: 40px;
-    color:var(--azulturquesa)
+    color:var(--azuloscuro)
 }
 
 #my-likes-container {
@@ -102,3 +102,41 @@ a{
 .my-likes-card img {
     width: 20%;
 }
+
+#deportes{
+    display: flex;
+    flex-direction: column;
+}
+
+#dosfotos{
+    display: flex;
+    flex-direction: row;
+}
+
+#deportes h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fotobasketniños{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 914px;
+}
+#fotobasketniños p{
+    max-width: 630px;
+
+}
+#nadal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 914px;
+    height: 322px;
+}
+#nadal p{
+    width: 630px;
+}
+
+
