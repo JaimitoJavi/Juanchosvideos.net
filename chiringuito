@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Carta El Chiringuito – Hotel Tierra de Biescas</title>
+
+<!-- Fuentes -->
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --primary:#006e7f;     /* verde pino */
+  --accent:#ffb344;      /* rayo de sol */
+  --sky:#aee3f8;         /* cielo */
+  --snow:#ffffff;        /* fondo */
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:'Montserrat',sans-serif;
+  background:linear-gradient(to bottom,var(--sky) 0%,var(--snow) 70%);
+  display:flex;justify-content:center;align-items:center;
+  min-height:100vh;
+}
+
+.menu-card{
+  background:rgba(255,255,255,0.9);
+  width:340px;padding:24px 28px 40px;
+  border-radius:16px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.15);
+  position:relative;overflow:hidden;
+}
+
+/* Silueta de montañas */
+.menu-card::before{
+  content:'';
+  position:absolute;left:0;bottom:0;
+  width:100%;height:120px;
+  background:url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" viewBox=\"0 0 1280 240\">\
+<path fill=\"%23006e7f\" d=\"M0 160l60-21.3C120 117 240 75 360 96s240 117 360 128 240-43 360-64 240 0 300 10.7l60 10.6V0H0z\"/>\
+</svg>') center/cover no-repeat;
+  opacity:.35;
+}
+
+.logo{display:block;margin:0 auto 12px;width:220px;}
+h1{
+  font-family:'Merriweather',serif;
+  font-size:1.45rem;text-align:center;
+  color:var(--primary);margin-bottom:6px;
+}
+h2{
+  font-size:.9rem;font-weight:500;text-align:center;
+  letter-spacing:1.4px;color:var(--accent);
+  margin-bottom:22px;
+}
+
+ul{list-style:none;}
+li{display:flex;justify-content:space-between;margin-bottom:14px;}
+
+.item-name{font-weight:500;color:#222;}
+.item-desc{font-size:.72rem;font-style:italic;color:#666;margin-top:2px;}
+.price{font-weight:700;color:var(--primary);white-space:nowrap;margin-left:8px;}
+
+footer{font-size:.6rem;text-align:right;margin-top:20px;color:#666;}
+</style>
+</head>
+
+<body>
+  <div class="menu-card">
+    <img class="logo" src="logo.png" alt="Hotel Tierra de Biescas">
+    <h1>El Chiringuito</h1>
+    <h2>Snack & Drinks · Verano 2025</h2>
+
+    <ul>
+      <li><div><span class="item-name">Calamares a la romana</span><br>
+          <span class="item-desc">Squid ‘a la romana’</span></div><span class="price">7 €</span></li>
+
+      <li><div><span class="item-name">Boquerones a la Andaluza</span><br>
+          <span class="item-desc">Andalusian anchovys</span></div><span class="price">12 €</span></li>
+
+      <li><div><span class="item-name">Ortiguillas de mar</span><br>
+          <span class="item-desc">Sea nettles</span></div><span class="price">14 €</span></li>
+
+      <li><div><span class="item-name">Tortillitas de camarones</span><br>
+          <span class="item-desc">Shrimp omelettes</span></div><span class="price">8 €</span></li>
+
+      <li><div><span class="item-name">Alitas de Pollo</span><br>
+          <span class="item-desc">Chicken wings</span></div><span class="price">13 €</span></li>
+
+      <li><div><span class="item-name">Patatas bravas</span><br>
+          <span class="item-desc">Spicy potatoes</span></div><span class="price">6 €</span></li>
+
+      <li><div><span class="item-name">Cochifrito</span><br>
+          <span class="item-desc">Fried pork</span></div><span class="price">22 €</span></li>
+
+      <li><div><span class="item-name">Burger de ternera o ternasco</span><br>
+          <span class="item-desc">Veal or lamb burger</span></div><span class="price">14 €</span></li>
+
+      <li><div><span class="item-name">Tomate Rosa con ventresca</span><br>
+          <span class="item-desc">Pink tomato with tuna belly</span></div><span class="price">16 €</span></li>
+
+      <li><div><span class="item-name">Verduritas en tempura</span><br>
+          <span class="item-desc">Tempura vegetables</span></div><span class="price">10,50 €</span></li>
+    </ul>
+
+    <footer>IVA incluido</footer>
+  </div>
+</body>
+</html>
